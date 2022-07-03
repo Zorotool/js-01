@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Web Studio (Version 2.1)</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+</head>
+
+
+<body class="body">
+    <!-- Шапка страницы -->
+    <div class="page-header">
+        <div class="container">
+            <nav class="page-header__nav">
+                <a class="logo" href="./index.html"> <span class="logo__web">Web</span>Studio</a>
+    
+                <button type="button" class="menu-button" aria-expanded="false" aria-controls="menu-container"
+                    data-menu-button>
+                    <svg width="24" height="24" aria-label="Переключатель мобильного меню">
+                        <use class="icon-close" href="./images/symbol-defs_01.svg#close"></use>
+                        <use class="icon-menu" href="./images/symbol-defs_01.svg#menu_24px"></use>
+                    </svg>
+                </button>
+    
+                <div class="menu-container" id="menu-container" data-menu>
+                    <ul class="site-nav list">
+                        <li class="site-nav__item"><a class="site-nav__link current" href="./index.html">Студия</a></li>
+                        <li class="site-nav__item"><a class="site-nav__link" href="./portfolio.html">Портфолио</a></li>
+                        <li class="site-nav__item"><a class="site-nav__link" href="/Контакты">Контакты</a></li>
+                    </ul>
+    
+                    <ul class="contacts list">
+                        <li class="contacts__link">
+                            <a href="tel:+380961111111" class="contacts__link--tel"> +38 096 111 11 11</a>
+                        </li>
+                        <li class="contacts__link">
+                            <a href="mailto:nfo@devstudio.com" class="contacts__link--mail"> nfo@devstudio.com</a>
+                        </li>
+                    </ul>
+    
+                    <ul class="mobile-social-list list">
+                        <li class="mobile-social-list__item">Instagram</li>
+                        <li class="mobile-social-list__item">Twitter</li>
+                        <li class="mobile-social-list__item">Facebook</li>
+                        <li class="mobile-social-list__item">LinkedIn</li>
+    
+                    </ul>
+    
+                </div>
+            </nav>
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <!-- Навигация -->
+                <a class="logo" href="./index.html"> <span class="logo__web">Web</span>Studio</a>
+                <ul class="site-nav-tab list">
+                    <li class="site-nav-tab__item"><a class="site-nav-tab__link" href="./index.html">Студия</a></li>
+                    <li class="site-nav-tab__item"><a class="site-nav-tab__link current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="site-nav-tab__item"><a class="site-nav-tab__link" href="/Контакты">Контакты</a></li>
+                </ul>
+
+                <ul class="list header-contacts">
+                    <li class="header-contacts__item">
+
+                        <a href="mailto:nfo@devstudio.com" class="header-contacts__link">
+                            <svg width="14" height="10" class="header-contacts__icon">
+                                <use href="./images/symbol-defs.svg#envelope"></use>
+                            </svg> nfo@devstudio.com</a>
+                    </li>
+                    <li class="header-contacts__item">
+
+                        <a href="tel:+380961111111" class="header-contacts__link">
+                            <svg width="10" height="14" class="header-contacts__icon">
+                                <use href="./images/symbol-defs.svg#smartphone"></use>
+                            </svg> +38 096 111 11 11</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+   
+    <!-- Уникальный контент страницы -->
+    <main>
+    <!-- Проекты -->
+           <section class="section-projects">
+                <div class="container">
+                    <h1 class="section-title hide">Примеры работ</h1>
+
+                <!-- Фильтры -->
+                <ul class="filtres list">
+                    <li class="filtres__item"><button type="button" class="filtres__button">Все</button></li>
+                    <li class="filtres__item"><button type="button" class="filtres__button">Веб-сайты</button></li>
+                    <li class="filtres__item"><button type="button" class="filtres__button">Приложения</button></li>
+                    <li class="filtres__item"><button type="button" class="filtres__button">Дизайн</button></li>
+                    <li class="filtres__item"><button type="button" class="filtres__button">Маркетинг</button></li>
+                </ul>
+
+                <!-- Примеры работ -->
+                <ul class="projects list">
+                   <li class="projects__item">
+                    <a href="/Технокряк" class="projects__link">
+                        <div class="projects__thumb">
+                            
+                            <picture>
+                            <source srcset="
+                                            ./images/product/product_1x1-desktop.jpg    1x,
+                                            ./images/product/product_1x2-desktop.jpg 2x
+                                            " media="(min-width:1200px)" />
+                            <source srcset="
+                                            ./images/product/product_1x1-tablet.jpg    1x,
+                                            ./images/product/product_1x2-tablet.jpg 2x
+                                            " media="(min-width:768px)" />
+                            <source srcset="
+                                            ./images/product/product_1x1-mobile.jpg    1x,
+                                            ./images/product/product_1x2-mobile.jpg 2x
+                                            " media="(min-width:480px)" />
+                            <img class="display-block stretchable" src="./images/product/product_1x1-mobile.jpg" width="100%"
+                                alt="product" />
+                            </picture>
+
+                            <div class="projects__overlay">
+                                <p class="projects__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю
+                                    получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                        </div>
+                        <div class="projects__meta">
+                            <h2 class="projects__title">Технокряк</h2>
+                            <p class="projects__description">Веб-сайт</p></a>
+                        </div>
+                    </li>
+                   <li class="projects__item">
+                    <a href="/Дизайн" class="projects__link">
+                        <div class="projects__thumb">
+                             <picture>
+                            <source srcset="
+                                            ./images/product/product_2x1-desktop.jpg    1x,
+                                            ./images/product/product_2x2-desktop.jpg 2x
+                                            " media="(min-width:1200px)" />
+                            <source srcset="
+                                            ./images/product/product_2x1-tablet.jpg    1x,
+                                            ./images/product/product_2x2-tablet.jpg 2x
+                                            " media="(min-width:768px)" />
+                            <source srcset="
+                                            ./images/product/product_2x1-mobile.jpg    1x,
+                                            ./images/product/product_2x2-mobile.jpg 2x
+                                            " media="(min-width:480px)" />
+                            <img class="display-block stretchable" src="./images/product/product_2x1-mobile.jpg" width="100%"
+                                alt="product" />
+                            </picture>
+                            <div class="projects__overlay">
+                                <p class="projects__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                    посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                        </div>
+                        <div class="projects__meta">
+                        <h2 class="projects__title">Постер New Orlean vs Golden Star</h2>
+                        <p class="projects__description">Дизайн</p></a>
+                        </div>    
+                    </li>
+                   <li class="projects__item">
+                    <a href="/Приложение" class="projects__link">
+                        <div class="projects__thumb">
+                             <picture>
+                            <source srcset="
+                                            ./images/product/product_3x1-desktop.jpg    1x,
+                                            ./images/product/product_3x2-desktop.jpg 2x
+                                            " media="(min-width:1200px)" />
+                            <source srcset="
+                                            ./images/product/product_3x1-tablet.jpg    1x,
+                                            ./images/product/product_3x2-tablet.jpg 2x
+                                            " media="(min-width:768px)" />
+                            <source srcset="
+                                            ./images/product/product_3x1-mobile.jpg    1x,
+                                            ./images/product/product_3x2-mobile.jpg 2x
+                                            " media="(min-width:480px)" />
+                            <img class="display-block stretchable" src="./images/product/product_3x1-mobile.jpg" width="100%"
+                                alt="product" />
+                            </picture>
+                            <div class="projects__overlay">
+                                <p class="projects__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                    посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                        </div>
+                        <div class="projects__meta">
+                        <h2 class="projects__title">Ресторан Seafood</h2>
+                        <p class="projects__description">Приложение</p></a>
+                        </div>    
+                    </li>
+                   <li class="projects__item">
+                    <a href="/Маркетинг" class="projects__link">
+                        <div class="projects__thumb">
+                             <picture>
+                            <source srcset="
+                                            ./images/product/product_4x1-desktop.jpg    1x,
+                                            ./images/product/product_4x2-desktop.jpg 2x
+                                            " media="(min-width:1200px)" />
+                            <source srcset="
+                                            ./images/product/product_4x1-tablet.jpg    1x,
+                                            ./images/product/product_4x2-tablet.jpg 2x
+                                            " media="(min-width:768px)" />
+                            <source srcset="
+                                            ./images/product/product_4x1-mobile.jpg    1x,
+                                            ./images/product/product_4x2-mobile.jpg 2x
+                                            " media="(min-width:480px)" />
+                            <img class="display-block stretchable" src="./images/product/product_4x1-mobile.jpg" width="100%"
+                                alt="product" />
+                            </picture>
+                            <div class="projects__overlay">
+                                <p class="projects__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                    посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                            </div>
+                        </div>
+                        <div class="projects__meta">
+                        <h2 class="projects__title">Проект Prime</h2>
+                        <p class="projects__description">Маркетинг</p></a>
+                        </div>    
+                    </li>
+                   <li class="projects__item">
+                    <a href="/Приложение" class="projects__link">
+                    <div class="projects__thumb">
+                     <picture>
+                            <source srcset="
+                                            ./images/product/product_5x1-desktop.jpg    1x,
+                                            ./images/product/product_5x2-desktop.jpg 2x
+                                            " media="(min-width:1200px)" />
+                            <source srcset="
+                                            ./images/product/product_5x1-tablet.jpg    1x,
+                                            ./images/product/product_5x2-tablet.jpg 2x
+                                            " media="(min-width:768px)" />
+                            <source srcset="
+                                            ./images/product/product_5x1-mobile.jpg    1x,
+                                            ./images/product/product_5x2-mobile.jpg 2x
+                                            " media="(min-width:480px)" />
+                            <img class="display-block stretchable" src="./images/product/product_5x1-mobile.jpg" width="100%"
+                                alt="product" />
+                            </picture>
+                        <div class="projects__overlay">
+                            <p class="projects__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+                    </div>
+                        <div class="projects__meta">
+                        <h2 class="projects__title">Проект Boxes</h2>
+                        <p class="projects__description">Приложение</p></a>
+                        </div>    
+                    </li>
+                   <li class="projects__item"><a href="/Веб-сайт" class="projects__link">
+                    <div class="projects__thumb">
+                         <picture>
+                            <source srcset="
+                                            ./images/product/product_6x1-desktop.jpg    1x,
+                                            ./images/product/product_6x2-desktop.jpg 2x
+                                            " media="(min-width:1200px)" />
+                            <source srcset="
+                                            ./images/product/product_6x1-tablet.jpg    1x,
+                                            ./images/product/product_6x2-tablet.jpg 2x
+                                            " media="(min-width:768px)" />
+                            <source srcset="
+                                            ./images/product/product_6x1-mobile.jpg    1x,
+                                            ./images/product/product_6x2-mobile.jpg 2x
+                                            " media="(min-width:480px)" />
+                            <img class="display-block stretchable" src="./images/product/product_6x1-mobile.jpg" width="100%"
+                                alt="product" />
+                            </picture>
+                        <div class="projects__overlay">
+                            <p class="projects__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+                    </div>
+                        <div class="projects__meta">
+                        <h2 class="projects__title">Inspiration has no Borders</h2>
+                        <p class="projects__description">Веб-сайт</p></a>
+                        </div>    
+                    </li>
+                   <li class="projects__item"><a href="/Дизайн" class="projects__link">
+                    <div class="projects__thumb">
+                         <picture>
+                            <source srcset="
+                                            ./images/product/product_7x1-desktop.jpg    1x,
+                                            ./images/product/product_7x2-desktop.jpg 2x
+                                            " media="(min-width:1200px)" />
+                            <source srcset="
+                                            ./images/product/product_7x1-tablet.jpg    1x,
+                                            ./images/product/product_7x2-tablet.jpg 2x
+                                            " media="(min-width:768px)" />
+                            <source srcset="
+                                            ./images/product/product_7x1-mobile.jpg    1x,
+                                            ./images/product/product_7x2-mobile.jpg 2x
+                                            " media="(min-width:480px)" />
+                            <img class="display-block stretchable" src="./images/product/product_7x1-mobile.jpg" width="100%"
+                                alt="product" />
+                            </picture>
+                        <div class="projects__overlay">
+                            <p class="projects__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+                    </div>
+                        <div class="projects__meta">
+                        <h2 class="projects__title">Издание Limited Edition</h2>
+                        <p class="projects__description">Дизайн</p></a>
+                        </div>    
+                    </li>
+                   <li class="projects__item"><a href="/Маркетинг" class="projects__link">
+                    <div class="projects__thumb">
+                         <picture>
+                            <source srcset="
+                                            ./images/product/product_8x1-desktop.jpg    1x,
+                                            ./images/product/product_8x2-desktop.jpg 2x
+                                            " media="(min-width:1200px)" />
+                            <source srcset="
+                                            ./images/product/product_8x1-tablet.jpg    1x,
+                                            ./images/product/product_8x2-tablet.jpg 2x
+                                            " media="(min-width:768px)" />
+                            <source srcset="
+                                            ./images/product/product_8x1-mobile.jpg    1x,
+                                            ./images/product/product_8x2-mobile.jpg 2x
+                                            " media="(min-width:480px)" />
+                            <img class="display-block stretchable" src="./images/product/product_8x1-mobile.jpg" width="100%"
+                                alt="product" />
+                            </picture>
+                        <div class="projects__overlay">
+                            <p class="projects__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+                    </div>
+                        <div class="projects__meta">
+                        <h2 class="projects__title">Проект LAB</h2>
+                        <p class="projects__description">Маркетинг</p></a>
+                        </div>    
+                    </li>
+                   <li class="projects__item"><a href="/Приложение" class="projects__link">
+                    <div class="projects__thumb">
+                         <picture>
+                            <source srcset="
+                                            ./images/product/product_9x1-desktop.jpg    1x,
+                                            ./images/product/product_9x2-desktop.jpg 2x
+                                            " media="(min-width:1200px)" />
+                            <source srcset="
+                                            ./images/product/product_9x1-tablet.jpg    1x,
+                                            ./images/product/product_9x2-tablet.jpg 2x
+                                            " media="(min-width:768px)" />
+                            <source srcset="
+                                            ./images/product/product_9x1-mobile.jpg    1x,
+                                            ./images/product/product_9x2-mobile.jpg 2x
+                                            " media="(min-width:480px)" />
+                            <img class="display-block stretchable" src="./images/product/product_9x1-mobile.jpg" width="100%"
+                                alt="product" />
+                            </picture>
+                        <div class="projects__overlay">
+                            <p class="projects__text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит
+                                посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+                        </div>
+                    </div>
+                        <div class="projects__meta">
+                        <h2 class="projects__title">Growing Business</h2>
+                        <p class="projects__description">Приложение</p></a>
+                        </div>    
+                    </li>
+               </ul>
+                </div>
+           </section>
+    </main>
+
+    <!-- Подвал страницы -->
+    <footer class="footer">
+        <div class="footer-content container">
+            <div class="address">
+                <a class="logo" href="./index.html"> <span class="logo__web">Web</span><span
+                        class="logo__Studio">Studio</span></a>
+                <address>
+                    <ul class="address__list list">
+                        <li class="item"><a href="https://goo.gl/maps/yupuxeeYmfNQeAXS8"
+                                class="address__contacts geo-address">г. Киев, пр-т Леси
+                                Украинки, 26</a>
+                        </li>
+                        <li class="item"><a href="mailto:nfo@devstudio.com" class="address__contacts">nfo@devstudio.com</a>
+                        </li>
+                        <li class="item"><a href="tel:+380961111111" class="address__contacts">+38 096 111 11 11</a></li>
+                    </ul>
+                </address>
+            </div>
+    
+            <div class="social-footer">
+                <h3 class="join">присоединяйтесь</h3>
+                <div class="social">
+                    <ul class="social-list list">
+                        <li class="social-list__item"> <a href="https://www.instagram.com/" class="social-list__link--grey">
+                                <svg class="social-list__icon--gray">
+                                    <use href="./images/symbol-defs.svg#instagram-2"></use>
+                                </svg>
+                            </a></li>
+                        <li class="social-list__item"> <a href="https://www.instagram.com/" class="social-list__link--grey">
+                                <svg class="social-list__icon--gray">
+                                    <use href="./images/symbol-defs.svg#twitter-1"></use>
+                                </svg>
+                            </a></li>
+                        <li class="social-list__item"> <a href="https://www.instagram.com/" class="social-list__link--grey">
+                                <svg class="social-list__icon--gray">
+                                    <use href="./images/symbol-defs.svg#facebook-1"></use>
+                                </svg>
+                            </a></li>
+                        <li class="social-list__item"> <a href="https://www.instagram.com/" class="social-list__link--grey">
+                                <svg class="social-list__icon--gray">
+                                    <use href="./images/symbol-defs.svg#linkedin-1"></use>
+                                </svg>
+                            </a></li>
+                    </ul>
+                </div>
+            </div>
+    
+            <div class="subcrib">
+                <label>
+                    <h3 class="join">Подпишитесь на рассылку</h3>
+                    <input class="subcrib__input" type="email" placeholder="E-mail">
+                </label>
+                <button class="subcrib__button" type="submit">Подписаться<svg class="subcrib__icon">
+                        <use href="./images/symbol-defs.svg#icon-send"> </use>
+                    </svg></button>
+    
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
+
+</body>
+
+</html>

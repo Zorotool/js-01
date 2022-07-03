@@ -1,0 +1,40 @@
+@media screen and (max-width: 1199px) {
+  .work {
+    display: none;
+  }
+}
+
+.work {
+  &__title {
+    color: var(--title-text-color);
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 1.17;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+}
+
+.work-list {
+  display: flex;
+  &__item:not(:first-child) {
+    margin-left: 30px;
+  }
+  &__item {
+    position: relative;
+  }
+  &__title {
+    display: block;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.17;
+    color: #ffffff;
+    text-align: center;
+    padding: 27px;
+    position: absolute;
+    bottom: 0;
+    background-color: rgba(47, 48, 58, 0.8);
+  }
+}

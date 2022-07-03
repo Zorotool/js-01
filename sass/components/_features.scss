@@ -1,0 +1,81 @@
+.section__title {
+  display: none;
+}
+
+.features {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.features__tumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 120px;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+
+.features__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.features__title {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+  margin-bottom: 10px;
+}
+
+.features__description {
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: #757575;
+  text-align: start;
+  margin-bottom: 30px;
+}
+
+// ============== Tablet =================
+.features__set {
+  text-align: center;
+  font-style: 32px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -15px;
+
+    @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+    }
+    .features__title {
+      text-align: left;
+    }
+
+    .features__item {
+      width: 350px;
+      margin: 15px;
+    }
+
+    .features__title {
+      text-align: left;
+    }
+    .features__description {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features {
+    margin-top: 94px;
+    margin-bottom: 94px;
+  }
+}

@@ -1,0 +1,217 @@
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  min-width: 450px;
+  min-height: 609px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 4px;
+  transform: translate(-50%, -50%) scale(1);
+  transition-property: transform, opacity;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.close-button {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  right: 0;
+  top: 0;
+  margin-right: 8px;
+  margin-top: 8px;
+  background: #ffffff;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+
+  transition-property: fill;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &__icon {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -1px;
+    top: 0px;
+  }
+
+  &:hover &__icon,
+  &:focus &__icon {
+    fill: #2196f3;
+    cursor: pointer;
+  }
+}
+
+.form-group {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 12px;
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+  }
+
+  &__lable {
+    margin-bottom: 4px;
+    margin-left: 0;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: #757575;
+  }
+
+  &__icon {
+    position: absolute;
+    bottom: 11px;
+    left: 11px;
+    width: 18px;
+    height: 18px;
+  }
+
+  &__input {
+    max-width: 370px;
+    height: 40px;
+    margin: 0;
+    padding: 6px 10px 6px 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    cursor: pointer;
+
+    transition-property: border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    @media screen and (min-width: 1200px) {
+      max-width: 448px;
+    }
+  }
+
+  &__input:hover,
+  &__input:focus,
+  &__textarea:hover,
+  &__textarea:focus {
+    border: 1px solid #2196f3;
+  }
+
+  .form-group__input:hover + &__icon,
+  .form-group__input:focus + &__icon {
+    fill: #2196f3;
+  }
+
+  &__textarea {
+    padding: 12px 16px;
+    max-width: 370px;
+    height: 120px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    resize: none;
+    cursor: pointer;
+
+    @media screen and (min-width: 1200px) {
+      max-width: 448px;
+    }
+  }
+
+  &__textarea::placeholder {
+    font-size: 12px;
+    line-height: 1.15;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
+}
+
+.check {
+  text-align: center;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-left: 20px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    margin-left: 30px;
+  }
+}
+
+.check-input {
+  appearance: none;
+}
+
+.check-box {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  background-image: url(../images/icon-check-of.svg);
+  margin-left: -24px;
+  margin-top: 5px;
+}
+
+.check-input:checked + .check-box {
+  background-image: url(../images/icon-check-on.svg);
+}
+
+.agreement {
+  text-decoration: underline;
+  color: #2196f3;
+}
+
+.submit-button {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+  width: 200px;
+  height: 50px;
+  border: none;
+  border-radius: 4px;
+  background-color: #2196f3;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  letter-spacing: 0.06em;
+  color: #ffffff;
+
+  transition-property: box-shadow;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    cursor: pointer;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.backdrop.is-hidden {
+  display: none;
+}
+.backdrop.is-hidden .modal {
+  transform: translate(0, 0) scale(0);
+}
